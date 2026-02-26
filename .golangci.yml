@@ -1,0 +1,14 @@
+version: "2"
+
+linters:
+  enable:
+    - loglinter
+  settings:
+    custom:
+      loglinter:
+        path: ./loglinter.so
+        description: "Checks log messages formatting and safety rules (slog/zap)"
+        original-url: "github.com/RomaNano/log-linter"
+        settings:
+          allow-symbols: false
+          sensitive: "password,token,secret,api_key,apikey,credential,passwd"

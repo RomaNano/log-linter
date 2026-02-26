@@ -1,0 +1,13 @@
+allow_symbols: false
+
+# substring patterns
+sensitive:
+  - password
+  - token
+  - api_key
+  - secret
+
+# regex patterns
+sensitive_regex:
+  - '(?i)\bapi[-_]?key\b\s*=\s*\S+'
+  - '(?i)\bpassword\b\s*:\s*\S+'
